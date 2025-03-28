@@ -1,1 +1,123 @@
-﻿
+﻿{% extends "base.html" %}
+
+{% load static %}
+
+{% block styles %}
+{% endblock styles %}
+
+{% block content %}
+
+  <section class="bg-f5">
+    <div class="tf-container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-title">
+                    <div class="widget-menu-link">
+                        <ul>
+                            <li><a href="home-01.html">Home</a></li>
+                            <li><a href="#">Accordion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="FAQ-section">
+    <div class="tf-container st2">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="accordion-page">
+            <h4>Frequently Asked Questions</h4>
+            <p class="des">Pellentesque quis lectus sagittis, gravida erat id</p>
+            <h6>Payments</h6>
+            <div class="flat-accordion">
+              <div class="flat-toggle">
+                <div class="toggle-title active">Which device can I use to enter your service? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+              <div class="flat-toggle">
+                <div class="toggle-title">What’s your very first memory? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+              <div class="flat-toggle">
+                <div class="toggle-title">If you could visit one planet, which would it be? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+              <div class="flat-toggle">
+                <div class="toggle-title">What do you want to be when you grow up? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+            </div>
+            <h6>Suggestion</h6>
+            <div class="flat-accordion">
+              <div class="flat-toggle">
+                <div class="toggle-title">When is the last time you can remember feeling ? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+              <div class="flat-toggle">
+                <div class="toggle-title">Which of the Seven Wonders of the world do you? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+              <div class="flat-toggle">
+                <div class="toggle-title">If you could change careers right this second <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+              <div class="flat-toggle">
+                <div class="toggle-title">What makes you happiest? <span class="icon"></span></div>
+                <div class="toggle-content">
+                  <p>Aenean porta, eros lacus congue lorem, samet mollis magna velit ac erat. Donec ut interdum arcu, egestas liber. Etiam condimentum aliquam accumsan. Morbi accumsan purus nec vehicula ornare.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        {% include 'footer.html' %}
+    </footer>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static "javascript/jquery.min.js" %}"></script>
+    <script src="{% static "javascript/swiper-bundle.min.js" %}"></script>
+    <script src="{% static "javascript/bootstrap.min.js" %}"></script>
+    <script src="{% static "javascript/boostrap-select.min.js" %}"></script>
+    <script src="{% static "javascript/jquery.nice-select.min.js" %}"></script>
+    <script src="{% static "javascript/countto.js" %}"></script>
+    <script src="{% static "javascript/wow.min.js" %}"></script>
+    <script src="{% static "javascript/swiper.js" %}"></script>
+    <script src="{% static "javascript/plugin.min.js" %}"></script>
+    <script src="{% static "javascript/jquery-ui.min.js" %} "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFC3m2n0jBRFTMvUNZc0-6Y0Rzlcadzcw"></script>
+    <script src="{% static "javascript/maps.js" %}"></script>
+    <script src="{% static "javascript/infobox.min.js" %}"></script>
+    <script src="{% static "javascript/marker.js" %}"></script>
+    <script src="{% static "javascript/jquery.cookie.js" %}"></script>
+    <script src="{% static "javascript/main.js" %}"></script>
+    <script src="{% static "javascript/jquery.fancybox.js" %}"></script>
+    <script src="{% static "javascript/password-addon.js" %}"></script>
+    
+{% endblock scripts %}
+

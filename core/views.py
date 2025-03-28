@@ -1,16 +1,31 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'core/home.html')
+    context = {
+        'page_home':'active'
+    }
+    return render(request, 'core/home.html',context)
 
 def blog_list(request):
-    return render(request, 'core/blog_list.html')
+    context = {
+        'page_blog':'active'
+    }
+    return render(request, 'core/blog_list.html',context)
 
 def about(request):
-    return render(request, 'core/about.html')
+    context = {
+        'page_about':'active'
+    }
+    return render(request, 'core/about.html',context)
 
 def contact(request):
-    return render(request, 'core/contact.html')
+    context = {
+        'page_contact':'active'
+    }
+    return render(request, 'core/contact.html',context)
 
 def faqs(request):
-    return render(request, 'core/faqs.html')
+    context = {
+        'page_faqs':'active'
+    }
+    return render(request, 'core/faqs.html',context)
